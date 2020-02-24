@@ -1,0 +1,262 @@
+[
+  {
+    "chipset": "01:01:01:01",
+    "clientTime": 1000000000.1,
+    "mac": "01:01:01:01",
+    "name": "TV-02",
+    "number": 20,
+    "numeric": 1,
+    "parameter": "",
+    "tags": [
+      "01:01:01:01"
+    ],
+    "unit": ""
+  },
+  {
+    "chipset": "01:01:01:01",
+    "clientTime": 1000000000.1,
+    "mac": "01:01:01:01",
+    "name": "TV-01",
+    "number": 19,
+    "numeric": 1,
+    "parameter": "",
+    "tags": [
+      "01:01:01:01"
+    ],
+    "unit": ""
+  },
+  {
+    "chipset": "01:01:01:01",
+    "clientTime": 1000000000.1,
+    "mac": "01:01:01:01",
+    "name": "TT-02",
+    "number": 18,
+    "numeric": 1,
+    "parameter": "",
+    "tags": [
+      "01:01:01:01"
+    ],
+    "unit": ""
+  },
+  {
+    "chipset": "01:01:01:01",
+    "clientTime": 1000000000.1,
+    "mac": "01:01:01:01",
+    "name": "TT-01",
+    "number": 17,
+    "numeric": 1,
+    "parameter": "",
+    "tags": [
+      "01:01:01:01"
+    ],
+    "unit": ""
+  },
+  {
+    "chipset": "01:01:01:01",
+    "clientTime": 1000000000.1,
+    "mac": "01:01:01:01",
+    "name": "PV-07",
+    "number": 16,
+    "numeric": 1,
+    "parameter": "",
+    "tags": [
+      "01:01:01:01"
+    ],
+    "unit": ""
+  },
+  {
+    "chipset": "01:01:01:01",
+    "clientTime": 1000000000.1,
+    "mac": "01:01:01:01",
+    "name": "PV-06",
+    "number": 15,
+    "numeric": 1,
+    "parameter": "",
+    "tags": [
+      "01:01:01:01"
+    ],
+    "unit": ""
+  },
+  {
+    "chipset": "01:01:01:01",
+    "clientTime": 1000000000.1,
+    "mac": "01:01:01:01",
+    "name": "PV-05",
+    "number": 14,
+    "numeric": 1,
+    "parameter": "",
+    "tags": [
+      "01:01:01:01"
+    ],
+    "unit": ""
+  },
+  {
+    "chipset": "01:01:01:01",
+    "clientTime": 1000000000.1,
+    "mac": "01:01:01:01",
+    "name": "PV-04",
+    "number": 13,
+    "numeric": 1,
+    "parameter": "",
+    "tags": [
+      "01:01:01:01"
+    ],
+    "unit": ""
+  },
+  {
+    "chipset": "01:01:01:01",
+    "clientTime": 1000000000.1,
+    "mac": "01:01:01:01",
+    "name": "PV-03",
+    "number": 12,
+    "numeric": 1,
+    "parameter": "",
+    "tags": [
+      "01:01:01:01"
+    ],
+    "unit": ""
+  },
+  {
+    "chipset": "01:01:01:01",
+    "clientTime": 1000000000.1,
+    "mac": "01:01:01:01",
+    "name": "PV-02",
+    "number": 11,
+    "numeric": 1,
+    "parameter": "",
+    "tags": [
+      "01:01:01:01"
+    ],
+    "unit": ""
+  },
+  {
+    "chipset": "01:01:01:01",
+    "clientTime": 1000000000.1,
+    "mac": "01:01:01:01",
+    "name": "PV-01",
+    "number": 10,
+    "numeric": 1,
+    "parameter": "",
+    "tags": [
+      "01:01:01:01"
+    ],
+    "unit": ""
+  },
+  {
+    "chipset": "01:01:01:01",
+    "clientTime": 1000000000.1,
+    "mac": "01:01:01:01",
+    "name": "PT-07",
+    "number": 9,
+    "numeric": 1,
+    "parameter": "",
+    "tags": [
+      "01:01:01:01"
+    ],
+    "unit": ""
+  },
+  {
+    "chipset": "01:01:01:01",
+    "clientTime": 1000000000.1,
+    "mac": "01:01:01:01",
+    "name": "PT-06",
+    "number": 8,
+    "numeric": 1,
+    "parameter": "",
+    "tags": [
+      "01:01:01:01"
+    ],
+    "unit": ""
+  },
+  {
+    "chipset": "01:01:01:01",
+    "clientTime": 1000000000.1,
+    "mac": "01:01:01:01",
+    "name": "PT-05",
+    "number": 7,
+    "numeric": 1,
+    "parameter": "",
+    "tags": [
+      "01:01:01:01"
+    ],
+    "unit": ""
+  },
+  {
+    "chipset": "01:01:01:01",
+    "clientTime": 1000000000.1,
+    "mac": "01:01:01:01",
+    "name": "PT-04",
+    "number": 6,
+    "numeric": 1,
+    "parameter": "",
+    "tags": [
+      "01:01:01:01"
+    ],
+    "unit": ""
+  },
+  {
+    "chipset": "01:01:01:01",
+    "clientTime": 1000000000.1,
+    "mac": "01:01:01:01",
+    "name": "PT-03",
+    "number": 5,
+    "numeric": 1,
+    "parameter": "",
+    "tags": [
+      "01:01:01:01"
+    ],
+    "unit": ""
+  },
+  {
+    "chipset": "01:01:01:01",
+    "clientTime": 1000000000.1,
+    "mac": "01:01:01:01",
+    "name": "PT-02",
+    "number": 4,
+    "numeric": 1,
+    "parameter": "",
+    "tags": [
+      "01:01:01:01"
+    ],
+    "unit": ""
+  },
+  {
+    "chipset": "01:01:01:01",
+    "clientTime": 1000000000.1,
+    "mac": "01:01:01:01",
+    "name": "PT-01",
+    "number": 3,
+    "numeric": 1,
+    "parameter": "",
+    "tags": [
+      "01:01:01:01"
+    ],
+    "unit": ""
+  },
+  {
+    "chipset": "01:01:01:01",
+    "clientTime": 1000000000.1,
+    "mac": "01:01:01:01",
+    "name": "PL-02",
+    "number": 2,
+    "numeric": 1,
+    "parameter": "",
+    "tags": [
+      "01:01:01:01"
+    ],
+    "unit": ""
+  },
+  {
+    "chipset": "01:01:01:01",
+    "clientTime": 1000000000.1,
+    "mac": "01:01:01:01",
+    "name": "PL-01",
+    "number": 1,
+    "numeric": 1,
+    "parameter": "",
+    "tags": [
+      "01:01:01:01"
+    ],
+    "unit": ""
+  }
+]

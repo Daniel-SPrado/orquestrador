@@ -13,13 +13,16 @@ target_ip = "172.16.9.1/24"
 
 class Rule:
     def getRule(gw, tag):
-        lista = []
         Client = Ontology.GetClient(gw, tag)
+        Lista = []
         if(Client):
             Service = Ontology.GetService(gw, tag, Client[0]['mac'], Client[0]['chipset'])
-            if(Service):
-                Data = Ontology.GetData(gw, Service[0]['mac'], Service[0]['chipset'], Service[0]['number'])
-        return Data
+            for item in Service:
+                Data = Ontology.GetData(gw, item['mac'], item['chipset'], item['number'])
+                if(len(Data) != 0):
+                    Lista.append(Data[0])
+                Data = None
+        return Lista
 
     #Pegar valor do sensor
     def getSensor(gw, data):

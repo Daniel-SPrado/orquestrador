@@ -14,7 +14,7 @@ class Ontology:
         return result
 
     def GetData(gw, mac, chipset, number):
-        payload = { 'chipset': chipset}
+        payload = { 'mac': mac, 'chipset': chipset, 'serviceNumber': number }
         result = requests.get(Ip.Gw(gw, 'data'), params=payload).json()
         return result
 

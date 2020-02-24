@@ -1,23 +1,23 @@
 REGRA
 CLIENT
 {
-    "clientTime": 1000000000.1111,
-    "tags": [
-        "01:01:01:01"
-    ],
-    "name": "UIoT devices",
-    "chipset": "12345678",
-    "mac": "12345678",
-    "serial": "12345678",
-    "processor": "none",
-    "channel": "Wi-fi",
-    "location": "-15.7757876:-48.077829"
+  "clientTime": 1000000000.1111,
+  "tags": [
+      "01:01:01:01"
+  ],
+  "name": "UIoT devices",
+  "chipset": "01:01:01:01",
+  "mac": "01:01:01:01",
+  "serial": "01:01:01:01",
+  "processor": "none",
+  "channel": "Wi-fi",
+  "location": "-15.7757876:-48.077829"
 }
 SERVICE
 {
-    "chipset": "12345678",
+    "chipset": "01:01:01:01",
     "clientTime": 1000000000.1,
-    "mac": "12345678",
+    "mac": "01:01:01:01",
     "name": "PL-01",
     "number": 1,
     "numeric": 1,
@@ -29,9 +29,9 @@ SERVICE
 }
 DATA
 {
-    "chipset": "12345678",
+    "chipset": "01:01:01:01",
     "clientTime": 1000000000.1,
-    "mac": "12345678",
+    "mac": "01:01:01:01",
     "sensitive": 1,
     "serviceNumber": 1,
     "tags": [
@@ -39,19 +39,19 @@ DATA
     ],
     "value": [
         {
-        "chipset": "Linux",
-        "mac": "78:2B:CB:BF:8F:61",
-        "number": 777365
+          "chipset": "Linux",
+          "mac": "78:2B:CB:BF:8F:61",
+          "number": 777365,
+          "condition": { 
+            "param": "==", 
+            "value": "0" 
+          }
         },
         {
-        "param": "==",
-        "value": "0"
-        },
-        {
-        # "chipset": "54321",
-        "mac": "30:ae:a4:f4:dd:24",
-        # "number": 1,
-        "param": "/LIGHT1=OFF"
+          "chipset": "54321",
+          "mac": "30:ae:a4:f4:dd:24",
+          "number": 1,
+          "param": "/LIGHT1=OFF"
         }
     ]
 }

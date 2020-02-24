@@ -6,18 +6,20 @@ import requests
 import time
 
 tag = '01:01:01:01'
-mac = '12345678'
+mac = '01:01:01:01'
 clients = {}
 
 def main():
     regra = Rule.getRule('local', mac)
+    print(regra)
     if(regra):
         for item in regra:
             valSensor = Rule.getSensor('local', item['value'][0])
-            condSensor = item['value'][1] #Pega a condição do sensor
-            print(condSensor)
-            valAtuador = Rule.getAtuador(item['value'][2])  
-            param = item['value'][2]['param']
+            condSensor = item['value'][0]['condition'] #Pega a condição do sensor
+            
+            valAtuador = Rule.getAtuador(item['value'][1])  
+            param = item['value'][1]['param']
+
             Rule.execRule(valSensor, condSensor, valAtuador, param)
             print('---------------')
             
