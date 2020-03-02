@@ -31,27 +31,31 @@ class Rule:
 
     #Tem que pegar o IP
     def getAtuador(data):
-        #return Ontology.GetData('local', data['mac'], data['chipset'], data['number'])[0]['value'][0]
-        return client_ip(data['mac'], )
-        #return dns.translate(data['mac'], data['chipset'], data['number'])
+        retorno_ip = client_ip(data['mac'], )
+        print("O IP é: " + str(retorno_ip))
+        if( retorno_ip is None ):
+            return dns.translate(data['mac'])
+        else:
+            return client_ip(data['mac'], )
 
     def execRule(sensor, cond, atuador, param):
-        
+        print("O valor do sensor é: " + sensor)
+        print("A condição é ser: " + cond['param'] + " a/que " + cond['value'])
         if(cond['param'] == '<'):
             if(sensor < cond['value']):
-                print("Entrou na condição")
+                print("Entrou na condição de <")
                 Ontology.sendData(atuador, param)
             else:
                 print("Nao fez a condição de <")
         elif(cond['param'] == '>'):
             if(sensor > cond['value']):
-                print("Entrou na condição")
+                print("Entrou na condição de >")
                 Ontology.sendData(atuador, param)
             else:
                 print("Nao fez a condição de >")
         elif(cond['param'] == '==' or cond['param'] == '='):
             if(sensor == cond['value']):
-                print("Entrou na condição")
+                print("Entrou na condição de ==")
                 Ontology.sendData(atuador, param)
             else:
                 print("Nao fez a condição de ==")
@@ -72,8 +76,4 @@ def client_ip(mac):
     
     return clients.get(mac)
 
-
-
-# regra = Rule.getRule('01:01:01:01')
-# print(Rule.getSensor('01:01:01:01', regra[0]))
-# print(Rule.getAtuador('01:01:01:01', regra[2]))
+print(client_ip('B8:27:EB:D3:5A:CD'))

@@ -2,7 +2,6 @@ from config import Ip
 from ontology import Ontology, Check
 from rule import Rule
 from translate import dns
-import requests
 import time
 
 tag = '01:01:01:01'
@@ -11,13 +10,13 @@ clients = {}
 
 def main():
     regra = Rule.getRule('local', mac)
-    print(regra)
     if(regra):
         for item in regra:
-            valSensor = Rule.getSensor('local', item['value'][0])
-            condSensor = item['value'][0]['condition'] #Pega a condição do sensor
+            #Trocar 'cloud' -> 'local' para pegar os valores do sensor localmente
+            valSensor = Rule.getSensor('cloud', item['value'][0]) #Pega o valor do sensor
+            condSensor = item['value'][0]['condition'] #Pega a condição que o sensor deve ter
             
-            valAtuador = Rule.getAtuador(item['value'][1])  
+            valAtuador = Rule.getAtuador(item['value'][1]) #Pega
             param = item['value'][1]['param']
 
             Rule.execRule(valSensor, condSensor, valAtuador, param)
@@ -26,4 +25,8 @@ def main():
     else:
         print("não existe regra")
 
-main()
+while(True):
+    main()
+    print('##################')
+    time.sleep(10)
+

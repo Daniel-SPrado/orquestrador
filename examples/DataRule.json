@@ -1,27 +1,27 @@
 {
-    "chipset": "01:01:01:01",
-    "clientTime": 1000000000.1,
-    "mac": "01:01:01:01",
-    "sensitive": 1,
-    "serviceNumber": 1,
-    "tags": [
-        "01:01:01:01"
-    ],
-    "value": [
-        {
-          "chipset": "Linux",
-          "mac": "78:2B:CB:BF:8F:61",
-          "number": 777365,
-          "condition": { 
-            "param": "==", 
-            "value": "0" 
-          }
-        },
-        {
-          "chipset": "54321",
-          "mac": "54321",
-          "number": 1,
-          "param": "/LIGHT1=OFF"
+  "chipset": "01:01:01:01",
+  "clientTime": 1000000000.1,
+  "mac": "01:01:01:01",
+  "sensitive": 1,
+  "serviceNumber": 3,
+  "tags": [
+      "01:01:01:01"
+  ],
+  "value": [
+      {
+        "chipset": "Linux",
+        "mac": "78:2B:CB:BF:8F:61",
+        "number": 777365,
+        "condition": { 
+          "param": "==", 
+          "value": "0" 
         }
-    ]
+      },
+      {
+        "chipset": "30:AE:A4:F4:D7:94",
+        "mac": "30:AE:A4:F4:D7:94",
+        "number": 1,
+        "param": "/LIGHT1=OFF"
+      }
+  ]
 }

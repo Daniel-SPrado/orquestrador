@@ -2,7 +2,10 @@ from config import Ip
 import requests
 import time
 
+headers = {'content-type': 'application/json'}
+
 class Ontology:
+    #Return client, service and data
     def GetClient(gw, tag):
         payload = { 'mac': tag }
         result = requests.get(Ip.Gw(gw,'client'), params=payload).json()
@@ -18,19 +21,28 @@ class Ontology:
         result = requests.get(Ip.Gw(gw, 'data'), params=payload).json()
         return result
 
+    #Create client, service and data
     def PostClient(gw, client):
-        result =requests.post(Ip.Gw(gw, 'addClient'), data = client)
+        result = requests.post(Ip.Gw(gw, 'addClient'), data = client, headers=headers)
         return result
 
+    def PostService(gw, service):
+        result = requests.post(Ip.Gw(gw, 'addService'), data = service, headers=headers)
+        return result
+
+    def PostData(gw, data):
+        result = requests.post(Ip.Gw(gw, 'addData'), data = data, headers=headers)
+        return result
+
+    #Send info
     def sendData(ip, param):
         payload = { param }
-        url = 'http://' + str(ip) + str(param)
+        url = 'http://' + ip + str(param)
         print(url)
-        print(ip)
-        # if(ip == None):
-        #     print('none')
-        # else:
-        #     result = requests.get(url)
+        print(param)
+        result = requests.get(url)
+        print(result)
+
 
 
 

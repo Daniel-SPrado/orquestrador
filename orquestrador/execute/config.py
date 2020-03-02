@@ -8,6 +8,10 @@ class Ip:
             seletor = '/list/data'
         if(option == 'addClient'):
             seletor = '/client'
+        if(option == 'addService'):
+            seletor = '/service'
+        if(option == 'addData'):
+            seletor = '/data'
         if(gw == 'cloud'):
             gateway = 'https://uiot-dims.herokuapp.com'
         if(gw == 'local'):
