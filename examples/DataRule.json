@@ -12,7 +12,7 @@
         "chipset": "Linux",
         "mac": "78:2B:CB:BF:8F:61",
         "number": 777365,
-        "condition": { 
+        "condition": {
           "param": "==", 
           "value": "0" 
         }
