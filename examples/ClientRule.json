@@ -1,13 +1,13 @@
 [
     {
       "channel": "Wi-fi",
-      "chipset": "01:01:01:01",
+      "chipset": "01:01:01:02",
       "clientTime": 1000000000.1111,
       "location": "-15.7757876:-48.077829",
-      "mac": "01:01:01:01",
+      "mac": "01:01:01:02",
       "name": "UIoT devices",
       "processor": "none",
-      "serial": "01:01:01:01",
+      "serial": "01:01:01:02",
       "tags": [
         "01:01:01:01"
       ]

@@ -3,7 +3,7 @@
   "clientTime": 1000000000.1,
   "mac": "01:01:01:01",
   "sensitive": 1,
-  "serviceNumber": 3,
+  "serviceNumber": 1,
   "tags": [
       "01:01:01:01"
   ],
