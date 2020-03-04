@@ -19,3 +19,6 @@ class Ip:
         return gateway + seletor
         #https://uiot-dims.herokuapp.com
 
+    def Mac():
+        return '02:02:02:02'
+

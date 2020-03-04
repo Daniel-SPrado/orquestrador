@@ -4,8 +4,9 @@ from rule import Rule
 from translate import dns
 import time
 
-tag = '01:01:01:01'
-mac = '01:01:01:01'
+time_sleep = 5
+tag = '01:01:01:02'
+mac = '01:01:01:02'
 clients = {}
 
 def main():
@@ -28,5 +29,5 @@ def main():
 while(True):
     main()
     print('##################')
-    time.sleep(10)
+    time.sleep(time_sleep)
 
