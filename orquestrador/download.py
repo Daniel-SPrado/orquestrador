@@ -26,7 +26,27 @@ def compareService(cloud, local):
         return False
 
 def compareValue(cloud, local):
-    return json.dumps(cloud)  == json.dumps(local)
+    sensorC = cloud[0]
+    sensorL = local[0]
+    conditionC = cloud[0]['condition']
+    conditionL = local[0]['condition']
+    atuadorC = cloud[1]
+    atuadorL = local[1]
+    # print(sensorC, sensorL)
+    # print('++++++++++')
+    # print(conditionC, conditionL)
+    # print('++++++++++')
+    # print(atuadorC, atuadorL)
+    if(sensorC['chipset'] == sensorL['chipset'] and sensorL['mac'] == sensorC['mac'] and sensorL['number'] == sensorC['number']):
+        if(conditionC['param'] == conditionL['param'] and conditionC['value'] == conditionL['value']):
+            if(atuadorC['chipset'] == atuadorL['chipset'] and atuadorL['mac'] == atuadorC['mac'] and atuadorL['number'] == atuadorC['number'] and atuadorC['param'] == atuadorL['param']):    
+                return True
+            else:
+                return False
+        else:
+            return False
+    else:
+        return False
     
 
 def compareData(cloud, local):
