@@ -27,9 +27,7 @@ class Rule:
     #Pegar valor do sensor
     def getSensor(gw, data):
         retorno = Ontology.GetData(gw, data['mac'], data['chipset'], data['number'])
-        if retorno != []:
-            return retorno[0]['value']
-        return {}
+        return retorno[0]['value'][0]
 
     #Tem que pegar o IP
     def getAtuador(data):
@@ -62,25 +60,7 @@ class Rule:
             else:
                 print("Nao fez a condição de ==")
 
-    def execRule2(atuador, param):
-       Ontology.sendData(atuador, param)
 
-    def ParseRule(value, cond, operator):
-        if(operator == '<'):
-            return value < cond
-        elif(operator == '>'):
-            return value > cond
-        elif(operator == '==' or operator == '='):
-            return value == cond    
-        return False
-
-    def ParseBoolean(value1, value2, operator):
-        if(operator == 'and'):
-            return value1 and value2
-        elif(operator == 'or'):
-            return value1 or value2
-
-        return False    
 
 
 def client_ip(mac):

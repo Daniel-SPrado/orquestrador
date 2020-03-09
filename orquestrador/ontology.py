@@ -37,8 +37,6 @@ class Ontology:
     #Send info
     def sendData(ip, param):
         payload = { param }
-        if ip is None:
-           ip = 'localhost' 
         url = 'http://' + ip + str(param)
         print(url)
         print(param)
