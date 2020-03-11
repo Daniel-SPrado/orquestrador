@@ -28,10 +28,10 @@ def main():
             val_s1 = Rule.getSensor('local', s1)
             print(val_s1)
             if 'sensor1' in val_s1:
-                print('value val_s1: ' + val_s1['sensor1']['value'])
+                print('value val_s1: ' + val_s1['value'])
                 print('s1 value: ' + s1['value'])
                 print('s1 param: ' + s1['param'])
-                s1_cond = Rule.ParseRule(val_s1['sensor1']['value'], s1['value'], s1['param'])
+                s1_cond = Rule.ParseRule(val_s1['value'], s1['value'], s1['param'])
 
             print('s1_cond: ' + str(s1_cond))
 
@@ -46,7 +46,7 @@ def main():
             if s2 is not None:
                 val_s2 = Rule.getSensor('local', s2)
                 if 'sensor2' in val_s2:
-                    s2_cond = Rule.ParseRule(val_s2['sensor2']['value'], s2['value'], s2['param'])
+                    s2_cond = Rule.ParseRule(val_s2['value'], s2['value'], s2['param'])
             
             print('s2_cond: ' + str(s2_cond))
 
