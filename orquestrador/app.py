@@ -4,8 +4,8 @@ from rule import Rule
 from translate import dns
 import time
 
-tag = '01:01:01:02'
-mac = '01:01:01:02'
+tag = '01:01:01:05'
+mac = '01:01:01:05'
 
 clients = {}
 
@@ -16,8 +16,6 @@ def main():
             data_value = item['value']
             if 'sensor1' not in data_value:
                 continue
-            
-            print('app ln 20')
 
             s1 = data_value['sensor1']
             actuator = data_value['actuator']
@@ -26,14 +24,8 @@ def main():
                 raise Exception('You have no data here.')
 
             val_s1 = Rule.getSensor('local', s1)
-            print(val_s1)
-            if 'sensor1' in val_s1:
-                print('value val_s1: ' + val_s1['value'])
-                print('s1 value: ' + s1['value'])
-                print('s1 param: ' + s1['param'])
-                s1_cond = Rule.ParseRule(val_s1['value'], s1['value'], s1['param'])
-
-            print('s1_cond: ' + str(s1_cond))
+            if val_s1:
+                s1_cond = Rule.ParseRule(int(val_s1), int(s1['value']), s1['param'])
 
             operator = 'or'
             bind_operator = data_value['operator']
@@ -45,10 +37,8 @@ def main():
             s2 = data_value['sensor2']
             if s2 is not None:
                 val_s2 = Rule.getSensor('local', s2)
-                if 'sensor2' in val_s2:
-                    s2_cond = Rule.ParseRule(val_s2['value'], s2['value'], s2['param'])
-            
-            print('s2_cond: ' + str(s2_cond))
+                if val_s2:
+                    s2_cond = Rule.ParseRule(int(val_s2), int(s2['value']), s2['param'])
 
             val_atuador = Rule.getAtuador(actuator)
             param_atuador = actuator['param']
