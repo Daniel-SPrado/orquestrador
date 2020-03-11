@@ -1,4 +1,5 @@
 from config import Ip
+import translate
 import requests
 import time
 
@@ -38,7 +39,7 @@ class Ontology:
     def sendData(ip, param):
         payload = { param }
         if ip is None:
-           ip = 'localhost' 
+           ip = translate.dns.translate() 
         url = 'http://' + ip + str(param)
         print(url)
         print(param)
