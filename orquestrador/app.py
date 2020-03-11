@@ -24,7 +24,7 @@ def main():
             print('---------------')
             
     else:
-        print("não existe regra")
+        print("nao existe regra")
 
 while(True):
     main()
